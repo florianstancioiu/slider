@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+  background-color: rgb(97, 109, 221);
+}
+
+main {
+  width: 600px;
+  margin: 60px auto 0;
+}
+
+.thumbnails {
+  display: flex;
+  gap: 20px;
+  justify-content: space-around;
+}
+
+.thumbnail {
+  max-width: 80px;
+  border: 4px solid black;
+  cursor: pointer;
+}
+
+.thumbnail.active {
+  border: 4px solid white;
+}
+
+.main-image-wrapper {
+  position: relative;
+  margin-bottom: 20px;
+  border: 1px solid #616161;
+}
+
+.left-side,
+.right-side {
+  cursor: pointer;
+  height: 100%;
+  width: 50px;
+  background-color: #5d535385;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: grid;
+  place-content: center;
+  color: white;
+}
+
+.right-side {
+  left: auto;
+  right: 0;
+}
